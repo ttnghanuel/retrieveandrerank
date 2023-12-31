@@ -110,6 +110,6 @@ def get_answer():
         for answer in answer_list:
             answer['score'] = float(answer['score'])
 
-    return json.dumps(answers)  # Serialize the answers to JSON
+    return answers  
 
 app.run(host = "0.0.0.0", port = 5000)
